@@ -1,0 +1,25 @@
+
+{% extends  'base1.html'%}
+
+{% block title%}
+
+
+{%endblock%}
+{% block content%}
+
+<div  class="text-center">
+<h1 >Book your Doctor</h1></div>
+<div class="container w-50 text-center my-5 p-3 bg-info " >
+
+<form action="" method-"POST">
+    {% csrf_token %}
+    
+    
+    {{form.as_p}}
+    <button class="btn  btn-primary mb-4"   type="submit">submit
+
+    </button>
+</form>
+</div>
+
+{%endblock%}
